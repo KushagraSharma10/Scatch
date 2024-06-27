@@ -3,9 +3,9 @@ const app = express();
 const path = require("path")
 const cookieParser = require("cookie-parser")
 const db = require("./config/mongoose-connection")
-const ownerRouter = require("./controllers/ownersRouter")
-const usersRouter = require("./controllers/usersRouter")
-const productsRouter = require("./controllers/productsRouter")
+const ownerRouter = require("./routes/ownersRouter")
+const usersRouter = require("./routes/usersRouter")
+const productsRouter = require("./routes/productsRouter")
 
 app.set("view engine", "ejs");
 app.use(express.json());

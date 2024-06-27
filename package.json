@@ -4,14 +4,17 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "npx tailwindcss -i ./public/css/style.css -o ./public/css/output.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bcrypt": "^5.1.1",
+    "config": "^3.3.12",
     "cookie-parser": "^1.4.6",
+    "debug": "^4.3.5",
     "ejs": "^3.1.10",
     "express": "^4.19.2",
     "joi": "^17.13.3",
@@ -19,5 +22,10 @@
     "mongoose": "^8.4.3",
     "multer": "^1.4.5-lts.1",
     "sharp": "^0.33.4"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4"
   }
 }
